@@ -1,3 +1,4 @@
+from decifrado import decifrate_all
 from scapy.all import rdpcap, ICMP, Raw
 
 def read_pcap(file_path):
@@ -5,6 +6,7 @@ def read_pcap(file_path):
     packets = rdpcap(file_path)
     
     seen_ids = set()  # Conjunto para rastrear IDs ya vistos
+    a_decifrar = ""  # Variable para almacenar el texto decodificado
     
     for packet in packets:
         if packet.haslayer(ICMP):
@@ -18,13 +20,14 @@ def read_pcap(file_path):
                 sequence_number = icmp_layer.seq
 
                 if (packet_id, sequence_number) not in seen_ids:
-                    # Mostrar datos del paquete
-                    print(f"ID: {packet_id}")
-                    print(f"Sequence Number: {sequence_number}")
-                    print(f"Payload: {payload.decode(errors='ignore')}")  # Decodifica el payload a texto, ignorando errores
+                    # Concatenar el contenido del payload al string a_decifrar
+                    a_decifrar += payload.decode(errors='ignore')
                     
                     # Añadir ID y número de secuencia al conjunto de vistos
                     seen_ids.add((packet_id, sequence_number))
+    
+    # Mostrar el texto decodificado completo
+    decifrate_all(a_decifrar)
 
 # Ruta al archivo pcapng
 file_path = 'envio_paquetes.pcapng'

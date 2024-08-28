@@ -2,16 +2,15 @@ from scapy.all import IP, ICMP, Raw, send
 import time
 
 def create_icmp_packet(data, packet_id, sequence_number):
-    # Convertir timestamp a una cadena de bytes de longitud fija (ejemplo de 4 bytes)
+    # Timestamp fijo de 5 bytes (valor 12345 en bytes)
+    fixed_timestamp = (12345).to_bytes(5, byteorder='big')
 
     # Crea un paquete ICMP Echo Request con datos personalizados
-    packet = IP(dst="8.8.8.8") / ICMP(id=packet_id, seq=sequence_number) / Raw(load=data)
+    packet = IP(dst="8.8.8.8") / ICMP(id=packet_id, seq=sequence_number) / Raw(load=fixed_timestamp + data)
     
     return packet
 
 def send_packets(input_string):
-    timestamp = int(time.time())  # Timestamp constante para todos los paquetes
-
     # Se inicia el ID del paquete en 1
     packet_id = 1
 

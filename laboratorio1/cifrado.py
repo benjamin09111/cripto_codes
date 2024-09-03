@@ -18,4 +18,4 @@ def cifrate(text, movement):
     return result
 
 # input del laboratorio
-# print(cifrate("criptografia y seguridad en redes", 9))
+print(cifrate("criptografia y seguridad en redes", 9))

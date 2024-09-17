@@ -1,12 +1,12 @@
-RESPUESTA VALIDA
+VALIDA
 
-curl 'http://localhost:8080/vulnerabilities/brute/' \
+benssyca123@benjamin:~$ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
   -H 'Accept-Language: es-ES,es;q=0.9,en;q=0.8' \
   -H 'Cache-Control: max-age=0' \
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Cookie: security=impossible; PHPSESSID=5a2d47784aa2ed9c65f37a4ea892ca91' \
+  -H 'Cookie: security=impossible; PHPSESSID=482d4e6e088135309d96c5955f2167f1' \
   -H 'Origin: http://localhost:8080' \
   -H 'Referer: http://localhost:8080/vulnerabilities/brute/' \
   -H 'Sec-Fetch-Dest: document' \
@@ -18,8 +18,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "Linux"' \
-  --data-raw 'username=pablo&password=letmein&Login=Login&user_token=c6164552f911dd907ca21334a4a3a1b4'
-  
+  --data-raw 'username=pablo&password=letmein&Login=Login&user_token=46a94f14be9cf65e4a240b1db4893868'
 <!DOCTYPE html>
 
 <html lang="en-GB">
@@ -93,7 +92,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
 			<input type="password" AUTOCOMPLETE="off" name="password"><br />
 			<br />
 			<input type="submit" value="Login" name="Login">
-			<input type='hidden' name='user_token' value='6f2c081c152fb72679e2a487fc2ce35e' />
+			<input type='hidden' name='user_token' value='3f95e33e5c335a784e76bcef7b06affd' />
 		</form>
 		<p>Welcome to the password protected area <em>pablo</em></p><img src="/hackable/users/pablo.jpg" />
 	</div>
@@ -131,16 +130,15 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
 
 </html>
 
+INVALIDA
 
-RESPUESTA INVALIDA
-
-curl 'http://localhost:8080/vulnerabilities/brute/' \
+benssyca123@benjamin:~$ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7' \
   -H 'Accept-Language: es-ES,es;q=0.9,en;q=0.8' \
   -H 'Cache-Control: max-age=0' \
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Cookie: security=impossible; PHPSESSID=fc8644ac65cde2c41837e9bd2ef740ad' \
+  -H 'Cookie: security=impossible; PHPSESSID=f45010fdec3fdfa105ef43d93f22f85b' \
   -H 'Origin: http://localhost:8080' \
   -H 'Referer: http://localhost:8080/vulnerabilities/brute/' \
   -H 'Sec-Fetch-Dest: document' \
@@ -152,7 +150,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "Linux"' \
-  --data-raw 'username=asd&password=asd&Login=Login&user_token=cfbc965fbf3f620c06939e48f0d26fb9'
+  --data-raw 'username=asd&password=asd&Login=Login&user_token=5004c27de3c34237a370da476effebb2'
 <!DOCTYPE html>
 
 <html lang="en-GB">
@@ -226,7 +224,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
 			<input type="password" AUTOCOMPLETE="off" name="password"><br />
 			<br />
 			<input type="submit" value="Login" name="Login">
-			<input type='hidden' name='user_token' value='dafc125ad2b6fff580c797e0a54cda1f' />
+			<input type='hidden' name='user_token' value='c2af93388e75bc16e172a37b83397fcd' />
 		</form>
 		<pre><br />Username and/or password incorrect.<br /><br/>Alternative, the account has been locked because of too many failed logins.<br />If this is the case, <em>please try again in 15 minutes</em>.</pre>
 	</div>

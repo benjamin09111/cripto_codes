@@ -6,7 +6,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'Cache-Control: max-age=0' \
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Cookie: security=impossible; PHPSESSID=a7ac420963ccfd495b916fc11dc6b3a1' \
+  -H 'Cookie: security=impossible; PHPSESSID=dc5d745658ba375ec671b08c91a8f7c1' \
   -H 'Origin: http://localhost:8080' \
   -H 'Referer: http://localhost:8080/vulnerabilities/brute/' \
   -H 'Sec-Fetch-Dest: document' \
@@ -18,7 +18,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "Linux"' \
-  --data-raw 'username=pablo&password=letmein&Login=Login&user_token=7809b16667d517f4ca4ddd8d21ec8eec'
+  --data-raw 'username=pablo&password=%C3%B1et%2Ceom&Login=Login&user_token=170b2b77a01777b813436799236d977e'
 
 cURL invalida
 
@@ -28,7 +28,7 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'Cache-Control: max-age=0' \
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Cookie: security=impossible; PHPSESSID=85061ff715f695e8efa69b0ad13dec17' \
+  -H 'Cookie: security=impossible; PHPSESSID=7a9d6a660dda85f353c4908fd9ffa02e' \
   -H 'Origin: http://localhost:8080' \
   -H 'Referer: http://localhost:8080/vulnerabilities/brute/' \
   -H 'Sec-Fetch-Dest: document' \
@@ -40,4 +40,4 @@ curl 'http://localhost:8080/vulnerabilities/brute/' \
   -H 'sec-ch-ua: "Not/A)Brand";v="8", "Chromium";v="126", "Google Chrome";v="126"' \
   -H 'sec-ch-ua-mobile: ?0' \
   -H 'sec-ch-ua-platform: "Linux"' \
-  --data-raw 'username=ac&password=a&Login=Login&user_token=39c8dbcbd1903c2e05a85d222532558e'
+  --data-raw 'username=asd&password=asd&Login=Login&user_token=82028d8ec509681a81af2349df539760'
